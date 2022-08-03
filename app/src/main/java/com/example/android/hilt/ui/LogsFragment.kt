@@ -28,7 +28,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.android.hilt.LogApplication
 import com.example.android.hilt.R
 import com.example.android.hilt.data.Log
+import com.example.android.hilt.data.LoggerDataSource
 import com.example.android.hilt.data.LoggerLocalDataSource
+import com.example.android.hilt.di.InMemoryLogger
 import com.example.android.hilt.util.DateFormatter
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -39,10 +41,9 @@ import javax.inject.Inject
 @AndroidEntryPoint  //Hilt は、LogsFragment のライフサイクルにアタッチされる依存関係コンテナを作成し、インスタンスを LogsFragment に注入できるようになる
 class LogsFragment : Fragment() {
 
-    //NOTE:　
-    // フィールド注入 @Inject → 注入したいフィールドに付与。
-    // Hilt にさまざまな型のインスタンスを注入させることができます。Hiltにより、これらのフィールドには自動で入力されるため、71行目のようなコードは不要となる。
-    @Inject  lateinit var logger: LoggerLocalDataSource
+    //フィールド注入 @Inject → 注入したいフィールドに付与。Hilt にさまざまな型のインスタンスを注入させることができます。Hiltにより、これらのフィールドには自動で入力されるため、71行目のようなコードは不要となる。
+    @InMemoryLogger
+    @Inject  lateinit var logger: LoggerDataSource
     @Inject  lateinit var dateFormatter: DateFormatter
 
     private lateinit var recyclerView: RecyclerView

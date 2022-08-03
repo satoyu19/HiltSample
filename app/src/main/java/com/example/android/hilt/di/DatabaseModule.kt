@@ -11,7 +11,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@InstallIn(SingletonComponent::class) //アノテーションに関連付けられている Hilt コンポーネントのクラスを渡す
+@InstallIn(SingletonComponent::class) //バインディングを使用できるコンテナをHilt指示
 @Module
 object DatabaseModule {
 
