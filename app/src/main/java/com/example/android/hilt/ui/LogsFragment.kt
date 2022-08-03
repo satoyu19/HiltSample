@@ -41,9 +41,9 @@ class LogsFragment : Fragment() {
 
     //NOTE:　
     // フィールド注入 @Inject → 注入したいフィールドに付与。
-    // Hilt にさまざまな型のインスタンスを注入させることができます。Hiltにより、これらのフィールドには自動で入力されるため、tame,71行目のようなコードは不要となる。
-    @Inject private lateinit var logger: LoggerLocalDataSource
-    @Inject private lateinit var dateFormatter: DateFormatter
+    // Hilt にさまざまな型のインスタンスを注入させることができます。Hiltにより、これらのフィールドには自動で入力されるため、71行目のようなコードは不要となる。
+    @Inject  lateinit var logger: LoggerLocalDataSource
+    @Inject  lateinit var dateFormatter: DateFormatter
 
     private lateinit var recyclerView: RecyclerView
 

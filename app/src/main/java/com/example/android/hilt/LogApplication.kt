@@ -23,10 +23,10 @@ import dagger.hilt.android.HiltAndroidApp
 @HiltAndroidApp //Hilt のコード生成をトリガーする。これで、アプリで Hilt を使用できるようになりました。
 class LogApplication : Application() {
 
-    lateinit var serviceLocator: ServiceLocator
+//    lateinit var serviceLocator: ServiceLocator
 
-    override fun onCreate() {
-        super.onCreate()
-        serviceLocator = ServiceLocator(applicationContext)     //applicationContext → アプリケーション全体で利用される場合に利用？
-    }
+//    override fun onCreate() {
+//        super.onCreate()
+//        serviceLocator = ServiceLocator(applicationContext)     //applicationContext → アプリケーション全体で利用される場合に利用？
+//    }
 }

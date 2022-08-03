@@ -25,20 +25,21 @@ import com.example.android.hilt.navigator.AppNavigator
 import com.example.android.hilt.navigator.AppNavigatorImpl
 import com.example.android.hilt.util.DateFormatter
 
-class ServiceLocator(applicationContext: Context) {
-
-    private val logsDatabase = Room.databaseBuilder(
-        applicationContext,
-        AppDatabase::class.java,
-        "logging.db"
-    ).build()
-
-    //常に LoggerLocalDataSource の同じインスタンスが返されます。これは「インスタンスのスコープをコンテナに設定する」と呼ばれます
-    val loggerLocalDataSource = LoggerLocalDataSource(logsDatabase.logDao())
-
-    fun provideDateFormatter() = DateFormatter()
-
-    fun provideNavigator(activity: FragmentActivity): AppNavigator {
-        return AppNavigatorImpl(activity)
-    }
-}
+//NOTE: Hiltの使用により不要となる
+//class ServiceLocator(applicationContext: Context) {
+//
+//    private val logsDatabase = Room.databaseBuilder(
+//        applicationContext,
+//        AppDatabase::class.java,
+//        "logging.db"
+//    ).build()
+//
+//    //常に LoggerLocalDataSource の同じインスタンスが返されます。これは「インスタンスのスコープをコンテナに設定する」と呼ばれます
+//    val loggerLocalDataSource = LoggerLocalDataSource(logsDatabase.logDao())
+//
+//    fun provideDateFormatter() = DateFormatter()
+//
+//    fun provideNavigator(activity: FragmentActivity): AppNavigator {
+//        return AppNavigatorImpl(activity)
+//    }
+//}
