@@ -52,9 +52,7 @@ _________________
 
 ・＠Povides：コンストラクタで注入できない型を提供する方法を指示。関数の本体は、Hilt がその型のインスタンスを提供する必要があるたびに実行される。つまり、関数の戻り値を必要とするものに対してDIを行う。
 
-   
-
-
-
-
+### 事前定義されたアノテーション
+---------------------------
+https://developer.android.com/training/dependency-injection/hilt-android?hl=ja#predefined-qualifiers
 
