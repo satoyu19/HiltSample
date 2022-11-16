@@ -54,5 +54,5 @@ _________________
 
 ### 事前定義されたアノテーション
 ---------------------------
-https://developer.android.com/training/dependency-injection/hilt-android?hl=ja#predefined-qualifiers
-
+https://developer.android.com/training/dependency-injection/hilt-android?hl=ja#predefined-qualifiers<br>
+https://developer.android.com/training/dependency-injection/hilt-android?hl=ja#component-default
