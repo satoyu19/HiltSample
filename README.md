@@ -18,7 +18,8 @@ __________________
 ・標準化されたコンポーネント<br>
 
 参考URl:https://dagger.dev/hilt/benefits
-      　：https://qiita.com/takahirom/items/3231edf2a430569b3e9d
+      　：https://qiita.com/takahirom/items/3231edf2a430569b3e9d<br>
+Qiita: https://qiita.com/Nunocky/items/ad22c45f56d54e14b499
 
 ### Hilt概要
 __________________
